@@ -1,4 +1,7 @@
 # PWGenerator
+[Password Generator](https://bfiles3.github.io/PWGenerator/)
+![](/PWGenSS.png)
+
     For the password generator assignment, the task was to create a code that could, based on user input, generate a unique password. In order to complete this assignment, I had to write a code that could theorhetically include all numbers, lower and uppercase, special characters, and numbers. That is where I started with the code for the generation of the password. 
     
     I assigned variables based on the possible characters that could be included in the random password. I had a specific variable for lowercase, uppercase, special, and numeric characters. I named these accordingly and placed them at the top of the JavaScript file so that the possibilities were defined early on. I then moved onto the next task, which was assigning variables based on the user's responses to the given prompts.
