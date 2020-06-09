@@ -5,7 +5,7 @@ var caps = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"
 var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 var spec = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.']
-// Write password to the #password input
+
 
 
 
@@ -35,7 +35,7 @@ function generatePassword() {
     if (pwNum) {
       allowedCharacters = allowedCharacters.concat(num)
     };
-
+    //Creating the length, case style, and character inclusion of the password based on the above variables
     var randomPass = []
     for (var i = 0; i < parseInt(pwLength); i++) {
       let random_index = Math.floor(Math.random() * allowedCharacters.length);
@@ -50,8 +50,8 @@ function generatePassword() {
 
 }
 
-//Creating the length, case style, and character inclusion of the password based on the above variables
 
+// Starter code to generate the password in the correct space on the generator
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password")
